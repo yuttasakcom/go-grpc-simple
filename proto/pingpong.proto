@@ -1,0 +1,17 @@
+syntax = "proto3";
+package proto;
+option go_package = "github.com/yuttasakcom/go-grpc-simple/protogen";
+
+message Ping {
+  int32 id = 1;
+  string message = 2;
+}
+
+message Pong {
+  int32 id = 1;
+  string message = 2;
+}
+
+service PingPong {
+  rpc StartPing (Ping) returns (Pong);
+}
