@@ -1,4 +1,4 @@
-# Go GRPC PING PONG
+# Go gRPC PING PONG
 
 ## Install compiler
 
